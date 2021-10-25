@@ -1,14 +1,21 @@
 {
-  "name": "Background-Color-Changer",
-  "description": "My first extension",
-  "version": "1.0",
+  "name": "Invert.it",
+  "description": "Go from Dark mode to Light mode, and vice versa",
+  "version": "2.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+    "scripts": [
+      "popup.js"
+    ],
+    "persisten": true
   },
-  "permissions": ["storage", "activeTab", "scripting"],
-  "action": {
+  "browser_action": {
+    "default_title": "Invert.it",
     "default_popup": "popup.html"
   },
-  "options_page": "options.html"
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tab"
+  ]
 }
