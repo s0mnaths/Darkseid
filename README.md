@@ -12,7 +12,7 @@ A simple Chrome extension which enables dark mode on any web page.
 :alien: *Now you're one with the __Darkseid__* :alien:
 
 ### Why I made this
-I was going through notebooks on Kaggle.com and wondered the site had dark mode, sadly it didn't. So I wanted to make my own dark mode enabler.
+I was going through notebooks on [Kaggle](https://www.kaggle.com/) and wondered the site had dark mode, sadly it didn't. So I wanted to make my own dark mode enabler.
 
 Now I can code without torturing my eyes all night long :monocle_face: 
 ![demo](./demo.gif)
