@@ -5,120 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="popup.css">
-  <title>Invert.it</title>
+  <title>Darkseid</title>
 </head>
 
-<style>
-  body {
-    min-width: 300px;
-    text-align: center;
-  }
-  h1 {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .yellow {
-    color: yellow;
-  }
-
-  .blue {
-    color: blue;
-  }
-
-  p, .button{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.15rem;
-  }
-
-  .button {
-    background-color: #8ABFF0;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 2.5rem;
-    width: 9rem;
-    border-radius: 1.25rem;
-    /* animation: backgroundYellow 1s infinite; */
-    cursor: pointer;
-  }
-
-  .row {
-    padding: 0 0.5rem;
-    pointer-events: none;
-  }
-
-  .circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 2.5rem;
-    width: 4.75rem;
-    border-radius: 1.25rem;
-    background-color: #588be4;
-    /* animation: moveCircleRight 1s infinite; */
-    pointer-events: none;
-  }
-
-  @keyframes moveCircleRight {
-    from {
-      left: 0;
-      background-color: #588be4;
-    }
-
-    to {
-      left: 100%;
-      transform: translate(-100%);
-      background-color: yellow;
-    }
-  }
-
-  @keyframes moveCircleLeft {
-    from {
-      left: 100%;
-      transform: translate(-100%);
-      background-color: yellow;
-    }
-
-    to {
-      left: 0;
-      background-color: #588be4;
-    }
-  }
-
-  @keyframes backgroundYellow {
-    from {
-      background-color: #588be4;
-    }
-
-    to {
-      left: 0;
-      background-color: #FDFCA3;
-    }
-  }
-
-  @keyframes backgroundLeft {
-    from {
-      background-color: #FDFCA3;
-    }
-
-    to {
-      left: 0;
-      background-color: #588be4;
-    }
-  }
-
-</style>
-
 <body class="popup">
-  <h1><span class="yellow">Invert</span><span class="blue">it</span></h1>
+  <h1><span class="dark">Dark</span><span class="seid">seid</span></h1>
   <p>Use this button to change between Light mode and Dark mode on websites!</p>
   <div class="button">
-    <div class="row">Invert</div>
-    <div class="row">Invert</div>
+    <div class="row">Switch</div>
+    <div class="row">Switch</div>
     <div class="circle"></div>
   </div>
 </body>

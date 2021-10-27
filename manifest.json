@@ -1,5 +1,5 @@
 {
-  "name": "Invert.it",
+  "name": "Darkseid",
   "description": "Go from Dark mode to Light mode, and vice versa",
   "version": "2.0",
   "manifest_version": 2,
@@ -10,7 +10,7 @@
     "persisten": true
   },
   "browser_action": {
-    "default_title": "Invert.it",
+    "default_title": "Darkseid",
     "default_popup": "popup.html"
   },
   "permissions": [
