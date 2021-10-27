@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
 
 body {
+    background-color: #171F24;
     min-width: 300px;
     text-align: center;
 }
@@ -8,35 +9,39 @@ h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-.yellow {
-    color: yellow;
+.dark {
+    color: #6ca9ff;
 }
 
-.blue {
-    color: blue;
+.seid {
+    color: #E58500;
 }
 
 p, .button{
     font-family: 'Poppins', sans-serif;
     font-size: 1.15rem;
+    color: #f5f5f5;
 }
 
 .button {
-    background-color: #8ABFF0;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    background-color: #bed9fe;
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 2.5rem;
-    width: 9rem;
+    width: 9.5rem;
     border-radius: 1.25rem;
     cursor: pointer;
 }
 
 .row {
-    padding: 0 0.5rem;
+    padding: 0 .5rem;
     pointer-events: none;
+    color: black;
 }
 
 .circle {
@@ -44,22 +49,22 @@ p, .button{
     top: 0;
     left: 0;
     height: 2.5rem;
-    width: 4.75rem;
+    width: 5rem;
     border-radius: 1.25rem;
-    background-color: #588be4;
+    background-color: #619afd;
     pointer-events: none;
 }
 
 @keyframes moveCircleRight {
     from {
         left: 0;
-        background-color: #588be4;
+        background-color: #619afd;
     }
 
     to {
         left: 100%;
         transform: translate(-100%);
-        background-color: yellow;
+        background-color: #f68500;
     }
 }
 
@@ -67,33 +72,33 @@ p, .button{
     from {
         left: 100%;
         transform: translate(-100%);
-        background-color: yellow;
+        background-color: #f68500;
     }
 
     to {
         left: 0;
-        background-color: #588be4;
+        background-color: #619afd;
     }
 }
 
 @keyframes backgroundYellow {
     from {
-        background-color: #588be4;
+        background-color: #619afd;
     }
 
     to {
         left: 0;
-        background-color: #FDFCA3;
+        background-color: #ffce8a;
     }
 }
 
 @keyframes backgroundLeft {
     from {
-        background-color: #FDFCA3;
+        background-color: #ffce8a;
     }
 
     to {
         left: 0;
-        background-color: #588be4;
+        background-color: #619afd;
     }
 }
