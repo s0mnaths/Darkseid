@@ -2,7 +2,7 @@
   "name": "Invert.it",
   "description": "Go from Dark mode to Light mode, and vice versa",
   "version": "2.0",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
     "scripts": [
       "popup.js"
@@ -16,6 +16,6 @@
   "permissions": [
     "https://*/*",
     "http://*/*",
-    "tab"
+    "activeTab"
   ]
 }
