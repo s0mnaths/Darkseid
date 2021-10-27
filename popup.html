@@ -10,6 +10,10 @@
 </head>
 
 <style>
+  body {
+    min-width: 300px;
+    text-align: center;
+  }
   h1 {
     font-family: 'Poppins', sans-serif;
   }
@@ -37,11 +41,13 @@
     height: 2.5rem;
     width: 9rem;
     border-radius: 1.25rem;
-    animation: backgroundYellow 1s infinite;
+    /* animation: backgroundYellow 1s infinite; */
+    cursor: pointer;
   }
 
   .row {
     padding: 0 0.5rem;
+    pointer-events: none;
   }
 
   .circle {
@@ -52,7 +58,8 @@
     width: 4.75rem;
     border-radius: 1.25rem;
     background-color: #588be4;
-    animation: moveCircleRight 1s infinite;
+    /* animation: moveCircleRight 1s infinite; */
+    pointer-events: none;
   }
 
   @keyframes moveCircleRight {
@@ -92,9 +99,20 @@
     }
   }
 
+  @keyframes backgroundLeft {
+    from {
+      background-color: #FDFCA3;
+    }
+
+    to {
+      left: 0;
+      background-color: #588be4;
+    }
+  }
+
 </style>
 
-<body>
+<body class="popup">
   <h1><span class="yellow">Invert</span><span class="blue">it</span></h1>
   <p>Use this button to change between Light mode and Dark mode on websites!</p>
   <div class="button">
@@ -103,5 +121,5 @@
     <div class="circle"></div>
   </div>
 </body>
-
+  <script src="./popup.js"></script>
 </html>

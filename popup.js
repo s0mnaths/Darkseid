@@ -1,24 +1,25 @@
-// Initialize butotn with users's prefered color
-let changeColor = document.getElementById("changeColor");
+if (document.querySelector(".popup")) {
+  const button = document.querySelector(".button");
+  const circle = document.querySelector(".circle");
 
-chrome.storage.sync.get("color", ({ color }) => {
-  changeColor.style.backgroundColor = color;
-});
+  let buttonOn = false;
 
-// When the button is clicked, inject setPageBackgroundColor into current page
-changeColor.addEventListener("click", async () => {
-  let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: setPageBackgroundColor,
-  });
-});
-
-// The body of this function will be execuetd as a content script inside the
-// current page
-function setPageBackgroundColor() {
-  chrome.storage.sync.get("color", ({ color }) => {
-    document.body.style.backgroundColor = color;
-  });
+  button.addEventListener("click", () => {
+    if (!buttonOn) {
+      buttonOn = true;
+      circle.style.animation = "moveCircleRight 1s forwards"
+      button.style.animation = "backgroundYellow 1s forwards"
+      chrome.tabs.executeScript ({
+        file: "./appOn.js"
+      })
+    }
+    else {
+      buttonOn = false;
+      circle.style.animation = "moveCircleLeft 1s forwards"
+      button.style.animation = "backgroundBlue 1s forwards"
+      chrome.tabs.executeScript ({
+        file: "./appOff.js"
+      })
+    }
+  })
 }
